@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-  <BrowserRouter basename="/eliftech-store-backend">
+  <BrowserRouter basename="/eliftech-store-frontend">
     <Provider store={store}>
       <App />
     </Provider>
