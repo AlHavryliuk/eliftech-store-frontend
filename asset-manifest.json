@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/eliftech-store-backend/static/css/main.98ec47ca.css",
+    "main.js": "/eliftech-store-backend/static/js/main.9d7a91ba.js",
+    "static/media/symbol-defs.svg": "/eliftech-store-backend/static/media/symbol-defs.776655380d278728f2bf06616d6fcc8c.svg",
+    "index.html": "/eliftech-store-backend/index.html",
+    "main.98ec47ca.css.map": "/eliftech-store-backend/static/css/main.98ec47ca.css.map",
+    "main.9d7a91ba.js.map": "/eliftech-store-backend/static/js/main.9d7a91ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98ec47ca.css",
+    "static/js/main.9d7a91ba.js"
+  ]
+}
