@@ -3,7 +3,7 @@ import { nanoid } from "nanoid"
 import { useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
 import { select } from "store/selectors/selector"
-import { decodeURL } from "utils/formatterURL/formatterURL"
+import { decodeURL } from "utils/formatter/formatterURL"
 import { CustomGoodsList, CustomGoodsSection } from "./Goods.styles"
 import GoodsCard from "./GoodsCard/GoodsCard"
 

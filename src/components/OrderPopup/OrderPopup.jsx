@@ -55,7 +55,8 @@ const OrderPopup = ({ close }) => {
                         <FormWrapper>
                             <label htmlFor="email">Email:</label>
                             <input value={user?.email ?? 'tete'} readOnly {...register("email")} /></FormWrapper>
-                        <FormWrapper>  <label htmlFor="address">Address:</label>
+                        <FormWrapper>  
+                            <label htmlFor="address">Address:</label>
                             <input placeholder="Address..." minLength={4} defaultValue={user?.address ?? ''}  {...register("address")} /></FormWrapper>
                         <FormWrapper>
                             <label htmlFor="phone">Phone:</label>

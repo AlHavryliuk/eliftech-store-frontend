@@ -8,7 +8,12 @@ export const orderCredentialIsValid = credential => {
 
   if (!fullField) return false;
 
-  const { name, email, phone } = credential;
+  const { name, email, phone, address } = credential;
+
+  if (address.trim() === '') {
+    failureToasts(`Address length must be more than 0`);
+    return false;
+  }
 
   if (!name.length >= 2) {
     failureToasts(`Name length must be more than 1`);

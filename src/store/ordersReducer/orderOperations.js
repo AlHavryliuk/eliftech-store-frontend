@@ -7,7 +7,6 @@ export const getOrdersThunk = createAsyncThunk(
   async (page, { rejectWithValue }) => {
     try {
       const { orders } = await getOrders(page);
-
       return orders;
     } catch (error) {
       const { status } = error.response;

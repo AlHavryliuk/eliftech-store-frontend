@@ -7,3 +7,11 @@ export const successSwal = (title = 'Success', text) =>
     icon: 'success',
     button: 'Ok',
   });
+
+export const errorSwal = text =>
+  swal({
+    title: 'Error!',
+    text,
+    icon: 'error',
+    button: 'Ok',
+  });

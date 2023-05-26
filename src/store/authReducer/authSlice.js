@@ -10,6 +10,7 @@ import {
 } from './authOperations';
 import persistReducer from 'redux-persist/es/persistReducer';
 import { getOrdersThunk } from 'store/ordersReducer/orderOperations';
+import { errorSwal } from 'utils/notification/swal';
 
 const initialState = {
   user: null,
@@ -31,6 +32,7 @@ export const authSlice = createSlice({
       })
       .addCase(registerUserThunk.rejected, (state, { payload }) => {
         state.isLoading = false;
+        errorSwal(payload);
         state.error = payload;
       })
 
@@ -44,6 +46,7 @@ export const authSlice = createSlice({
       })
       .addCase(loginUserThunk.rejected, (state, { payload }) => {
         state.error = payload;
+        errorSwal(payload);
         state.isLoading = false;
       })
 

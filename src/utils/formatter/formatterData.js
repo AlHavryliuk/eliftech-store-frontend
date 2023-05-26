@@ -1,6 +1,6 @@
 export const convertData = data => {
-  const dateString = '2023-05-25T16:45:57.959Z';
-  const date = new Date(dateString);
+
+  const date = new Date(data);
 
   const year = date.getFullYear();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');

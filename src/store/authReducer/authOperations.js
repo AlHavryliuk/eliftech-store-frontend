@@ -18,9 +18,8 @@ export const registerUserThunk = createAsyncThunk(
       dispatch(loginUserThunk({ email, password }));
       return result;
     } catch (error) {
-      const { status } = error.response;
-      const { message } = error;
-      return rejectWithValue({ message, status });
+      const { message } = error.response.data;
+      return rejectWithValue(message);
     }
   }
 );
@@ -33,7 +32,8 @@ export const loginUserThunk = createAsyncThunk(
       successSwal('Success', 'Login is successful');
       return userData;
     } catch (error) {
-      return rejectWithValue(error.message);
+      const { message } = error.response.data;
+      return rejectWithValue(message);
     }
   }
 );

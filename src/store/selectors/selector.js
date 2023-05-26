@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 import { token } from 'service/hosts';
-import { decodeURL } from 'utils/formatterURL/formatterURL';
+import { decodeURL } from 'utils/formatter/formatterURL';
 
 export const select = {
   darkMode: state => state.theme.darkMode,

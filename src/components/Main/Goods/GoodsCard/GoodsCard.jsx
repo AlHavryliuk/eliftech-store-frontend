@@ -15,6 +15,7 @@ const GoodsCard = ({ dish, storeName }) => {
     const correctImage = image ?? defaultImage
 
     const itemIsAlreadyAdded = (itemName) => basket.some(({ name }) => name === itemName)
+    const checkCount = (itemName) => basket.find(({ name }) => name === itemName)?.count ?? count
 
     const handleAddItem = ({ name, price }) => {
         if (!name || !price) return
@@ -40,7 +41,7 @@ const GoodsCard = ({ dish, storeName }) => {
 
                 <CustomCountWrapper>
                     <CustomCountButton disabled={itemIsAlreadyAdded(name)} onClick={handleDecrementCount}>-</CustomCountButton>
-                    <CustomCountValue>{count}</CustomCountValue>
+                    <CustomCountValue>{checkCount(name)}</CustomCountValue>
                     <CustomCountButton disabled={itemIsAlreadyAdded(name)} onClick={handleIncrementCount}>+</CustomCountButton>
                 </CustomCountWrapper>
 

@@ -51,6 +51,10 @@ export const CustomUseForm = styled.div`
     flex-direction: column;
     gap: 7px;
 
+    & > span {
+      color: black;
+    }
+
     & > input {
       text-align: center;
       padding: 10px;

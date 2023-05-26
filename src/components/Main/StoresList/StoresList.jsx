@@ -3,7 +3,7 @@ import Loader from "components/Custom/Loader/Loader"
 import { useSelector } from "react-redux"
 import { reselect, select } from "store/selectors/selector"
 
-import { encodeURL } from "utils/formatterURL/formatterURL"
+import { encodeURL } from "utils/formatter/formatterURL"
 import { CustomStoresList, StoreItem } from "./StoresList.styles"
 
 const StoresList = () => {

@@ -1,9 +1,10 @@
-import { convertData } from "utils/formatterURL/formatterData";
+import { convertData } from "utils/formatter/formatterData";
 import { OrderItem } from "../OrderHistory.styles";
 
 const OrderHistoryItem = ({ order }) => {
 
     const { _id: id, items, createdAt } = order;
+  
 
     const getStoreName = () => items[0].storeName
     const getTotalPrice = () => items.reduce((acc, { totalPrice }) => acc + +totalPrice, 0).toFixed(2)
